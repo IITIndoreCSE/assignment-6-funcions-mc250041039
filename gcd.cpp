@@ -1,9 +1,18 @@
 #include <iostream>
 using namespace std;
 
-// Recursive function to find GCD of two numbers
 int gcd(int a, int b) {
-    // TODO: complete the function as per instructions
+	int r;
+	if (b==0){
+		return a;
+	}else{
+		while (b!= 0){
+			int r=a%b;//a=12, b=8
+			a=b;
+			b=r;
+		}
+	}
+	return a;
     
 }
 
